@@ -29,9 +29,17 @@
     width: 100vw;
        z-index: 1;
 }
+footer{
+    display: grid;
+    grid-template-columns:769px 500px; /** to change footer width**/
+    /* padding-bottom: 50px; */
+    padding-top: 10px;
+}
 
 .right-footer{
     height: 200px;
+    padding-right: 50px;
+    
 }
 
 .left-footer{
@@ -49,9 +57,6 @@ padding-left: 0%;
         perMove:1,
     
       } 
-      
-      
-      
       ).mount();
     } );
     document.addEventListener( 'DOMContentLoaded', function () {
@@ -118,7 +123,7 @@ padding-left: 0%;
 			<div id="nav" class="fadein">
 				<ul class="nav-inner">
 					<li>
-						<a href="/templates/index.html">Home</a>
+						<a href="/index.html">Home</a>
 					</li>
 					<li>
 						<a href="/templates/about.html">About me</a>
@@ -182,16 +187,22 @@ padding-left: 0%;
                                         <img src="/assets/images/Portfolio.png">
                                         <a class="" id="see-ico" href="/templates/portfolioWeb.html"><img class="icon-img" height="50px" width="50px" src="/assets/icons/See Prototype Icon.png" alt=""></a>
                                         <a class="" id="play-ico" href="/templates/index.html"><img class="icon-img" height="50px" width="50px" src="/assets/icons/Play Icon.png" alt=""></a>
-                                    </div>
-                                  
-                         
+                                    </div>      
             </div>
+            <h2>Team Projects</h2>
+            <div class="projects-scroll" id="non-scroller">
+                <div class="splide__slide">
+                    <img src="/assets/images/Portfolio.png">
+                    <a class="" id="see-ico" href="/templates/portfolioWeb.html"><img class="icon-img" height="50px" width="50px" src="/assets/icons/See Prototype Icon.png" alt=""></a>
+                    <a class="" id="play-ico" href="/templates/index.html"><img class="icon-img" height="50px" width="50px" src="/assets/icons/Play Icon.png" alt=""></a>
+                </div>      
+</div>
             <footer>
                 <div class="left-footer">
                     <h1>Santhosh Desigr</h1>
                     <p>I am Self learner and a curious person</p>
                     <div class="links">
-                        <a href="/templates/index.html">Home</a>
+                        <a href="/index.html">Home</a>
                         <a href="/templates/about.html">About</a>
                         <a href="/templates/projects.html">Projects</a>
                         <a href="/templates/contact.html">Contact</a>

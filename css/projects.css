@@ -1,147 +1,140 @@
-body{
-    overflow-x: hidden;
-    
+body {
+  overflow-x: hidden;
 }
-.container{
-    height: 0%;
+.container {
+  height: 0%;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-.project{
-    height: 0%;
+.project {
+  height: 0%;
 }
-.project-content{
-    width: 100vw;
-    height: 100vh;
-    margin-bottom: 700px;
+.project-content {
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 700px;
 }
-.banner{
-    width: 100%;
-    background: black;
-    position: relative;
-    
+.banner {
+  width: 100%;
+  background: black;
+  position: relative;
 }
 
-.banner-img{
-    width: 100%;
-   
+.banner-img {
+  width: 100%;
 }
-#breadcrumb{
-position: absolute;
-top: 50%;
-left: 44%;
-font-family: 'Red Hat Display';
-font-style: normal;
-font-weight: 300;
-font-size: 20px;
-line-height: 26px;
+#breadcrumb {
+  position: absolute;
+  top: 50%;
+  left: 44%;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
 
-color: #FFFFFF;
-}
-
-.projects-show{
-    padding-top: 150px;
-    padding-left: 100px;
-    width: 100%;
-    height: 1500px;
-    background-color: black;
-}
-.projects-show >h2{
-font-family: 'Red Hat Display';
-font-style: normal;
-font-weight: 600;
-font-size: 40px;
-line-height: 53px;
-
-
-color: #FFFFFF;
+  color: #ffffff;
 }
 
-.projects-scroll{
-    width: 100%;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: aqua; */
+.projects-show {
+  padding-top: 150px;
+  padding-left: 100px;
+  width: 100%;
+  height: 1500px; /*change height of project page*/
+  background-color: black;
 }
-.projects-scroll > .splide{
-display: flex;
-align-items: center;
-padding-left: 100px;
-justify-content: center;
-}
-.project-card{
-    height: min-content;
-    width: 400px;
-    background-color: blue;
-    position: relative;
-    
-}
-.project-card>button{
-    position: absolute;
-    /* top: 10%; */
-    left: 10%;
-    bottom: 10%;
+.projects-show > h2 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 53px;
+
+  color: #ffffff;
 }
 
-.icon-btn{
-    width: 50px;
-    height: 50px;
+.projects-scroll {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aqua; */
 }
-.icon-img{
-    width: fit-content;
+.projects-scroll > .splide {
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  justify-content: center;
 }
-.see-icon-link{
-    position: relative;
-    top: -3%;
-    bottom: 50%;
-    right: 60%;
-    z-index: 0;
-    cursor: pointer;
-    z-index: 0;
-    pointer-events:visible;
-    opacity: 0.75;
-
+.project-card {
+  height: min-content;
+  width: 400px;
+  background-color: blue;
+  position: relative;
 }
-.play-icon-link{
-    position: relative;
-    top: -17.5%;
-    bottom: 90%;
-    right: 0%;
-    left:50%;
-    z-index: 0;
-    opacity: .75;
-   cursor: pointer;
-
+.project-card > button {
+  position: absolute;
+  /* top: 10%; */
+  left: 10%;
+  bottom: 10%;
 }
 
-.splide__slide{
-    position: absolute;
-    backface-visibility: hidden;
+.icon-btn {
+  width: 50px;
+  height: 50px;
+}
+.icon-img {
+  width: fit-content;
+}
+.see-icon-link {
+  position: relative;
+  top: -17%;
+  bottom: 50%;
+  right: 80%;
+  z-index: 0;
+  cursor: pointer;
+  z-index: 0;
+  pointer-events: visible;
+  opacity: 0.75;
+}
+.play-icon-link {
+  position: relative;
+  top: -17.5%;
+  bottom: 90%;
+  right: 0%;
+  left: 50%;
+  z-index: 0;
+  opacity: 0.75;
+  cursor: pointer;
 }
 
-.splide__slide>img:hover{
-    opacity: 0.3;
-    transition: 0.5s ease;
-    z-index: -1;
+.splide__slide {
+  position: absolute;
+  backface-visibility: hidden;
 }
 
-#see-ico{
-    position: absolute;
-    top: 78%;
-    left: 25%;
+.splide__slide > img:hover {
+  opacity: 0.3;
+  transition: 0.5s ease;
+  z-index: -1;
 }
-   
-#play-ico{
-    top: 78%;
-    position: absolute;
-    left: 65%;
+
+#see-ico {
+  position: absolute;
+  top: 78%;
+  left: 25%;
 }
-#non-scroller{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-left: 265px;
+
+#play-ico {
+  top: 78%;
+  position: absolute;
+  left: 65%;
+}
+#non-scroller {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 265px;
 }

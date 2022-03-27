@@ -1,106 +1,104 @@
-section.contact{
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
+section.contact {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
 }
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
-.contact > .header >h1{
-width: 800px;
-height: 158px;
+.contact > .header > h1 {
+  width: 800px;
+  height: 158px;
 
-font-family: 'Red Hat Display';
-font-style: normal;
-font-weight: 900;
-font-size: 60px;
-line-height: 79px;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 79px;
 
-color: #FFFFFF;
-
+  color: #ffffff;
 }
-.header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 200px;
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 200px;
 }
-.form{
-    width: 100vw;
-    height:100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    padding-left: 100px;
+.form {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-left: 100px;
 }
 
-.form>h2{
-width: 303px;
-height: 79px;
+.form > h2 {
+  width: 303px;
+  height: 79px;
 
-font-family: 'Red Hat Display';
-font-style: normal;
-font-weight: 900;
-font-size: 60px;
-line-height: 79px;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 79px;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
-label{
-width: 134.53px;
-height: 29.62px;
-text-transform: capitalize;
-font-family: 'Red Hat Display';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 32px;
+label {
+  width: 134.53px;
+  height: 29.62px;
+  text-transform: capitalize;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
-input{
-width: 483px;
-height: 53px;
-background: #898989;
-border: 1px solid #2E2929;
-box-sizing: border-box;
-border-radius: 20px;
-color:white;
-font-size: 18px;
+input {
+  width: 483px;
+  height: 53px;
+  background: #898989;
+  border: 1px solid #2e2929;
+  box-sizing: border-box;
+  border-radius: 20px;
+  color: white;
+  font-size: 18px;
 }
-textarea{
-width: 966px;
-height: 241px;
+textarea {
+  width: 966px;
+  height: 241px;
 
-background: #898989;
-border: 1px solid #2E2929;
-box-sizing: border-box;
-border-radius: 10px;
-color: white;
-font-size: 18;
+  background: #898989;
+  border: 1px solid #2e2929;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: white;
+  font-size: 18;
 }
-button{
-    width: 227px;
-    height: 60px;
-    margin-left: 350px;
-    
-    background: #F98C3E;
-    border: 1px solid #F98C3E;
-    box-sizing: border-box;
-    border-radius: 50px;
+button {
+  width: 227px;
+  height: 60px;
+  margin-left: 350px;
 
-    font-family: 'Red Hat Display';
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-line-height: 53px;
+  background: #f98c3e;
+  border: 1px solid #f98c3e;
+  box-sizing: border-box;
+  border-radius: 50px;
 
-color: #000000;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
 
+  color: #000000;
 }
-footer{
-    padding-top: 25em;
+footer {
+  padding-top: 17em;
 }
