@@ -1,0 +1,494 @@
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+section.home{
+    background-image: url("/assets/images/Homepage.png");
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+/* nav bar  */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.nav-inner >li{
+  width: 171px;
+height: 79px;
+
+font-family: 'Red Hat Display';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 79px;
+
+color: #FFFFFF;
+
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.container .menu-btn {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  z-index: 10;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.container .menu-btn:hover span {
+  background-color: #3ED7F9;
+}
+.container .menu-btn.active {
+  transform: rotate(180deg);
+}
+.container .menu-btn.active span {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.container .menu-btn.active span.top {
+  transform: rotate(45deg);
+  transform-origin: left center;
+  top: 9px;
+  left: 11.25px;
+}
+
+.container .menu-btn.active span.bot {
+  transform: rotate(-45deg);
+  transform-origin: left center;
+  top: 37px;
+  left: 11.25px;
+}
+.container .menu-btn span {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background-color: #3ED7F9;
+  position: absolute;
+  top: 23px;
+  left: 5px;
+  border-radius: 2px;
+  transition: background-color 0.3s ease-in-out;
+}
+.container .menu-btn span.top {
+  top: 11px;
+}
+.container .menu-btn span.bot {
+  top: 35px;
+}
+.container #nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: -1;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.container #nav.leftslide {
+  width: 250px;
+  height: 100vh;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate3d(-300px, 0px, 0px);
+}
+.container #nav.fadein {
+  width: 100%;
+  height: 100vh;
+  background-color: #1E2025;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: white;
+}
+.container #nav.topslide {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate3d(0px, -100%, 0px);
+  text-align: center;
+}
+.container #nav.pushslide {
+  width: 250px;
+  height: 100vh;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate3d(0px, 0px, 0px);
+}
+.container #nav.open {
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
+  z-index: 5;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.container #nav.open .nav-inner li {
+  animation: fadeInRight 0.4s ease forwards;
+  animation-delay: 0.3s;
+}
+.container #nav.open .nav-inner li:nth-of-type(1) {
+  animation-delay: 0.35s;
+}
+.container #nav.open .nav-inner li:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+.container #nav.open .nav-inner li:nth-of-type(3) {
+  animation-delay: 0.45s;
+}
+.container #nav.open .nav-inner li:nth-of-type(4) {
+  animation-delay: 0.5s;
+}
+.container #nav.open .nav-inner li:nth-of-type(5) {
+  animation-delay: 0.55s;
+}
+.container #nav .nav-inner li {
+  position: relative;
+  margin-bottom: 30px;
+  opacity: 0;
+  transition: transform 0.3s ease-in-out;
+}
+.container #nav .nav-inner li a {
+  display: inline-block;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  /* font-size: 30px;
+  text-transform: capitalize;
+  letter-spacing: 1px; */
+  /* font-weight: 800; */
+  padding: 4px 8px;
+  transition: all 0.2s ease-in-out;
+
+  width: 300px;
+height: 79px;
+left: 0px;
+top: 0px;
+
+font-family: 'Red Hat Display';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 79px;
+
+
+}
+.container #nav .nav-inner li a:before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #3BD9B5;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.container #nav .nav-inner li a:hover {
+  
+  color: #d3d3d3;
+  transform: scale(0.9)
+}
+/* .container #nav .nav-inner li a:hover:before {
+   content: "";
+  left: -15px;
+  opacity: 1; 
+}
+ */
+.container #style-box {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/assets/images/Homepage.png");
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+  transition: transform 0.3s ease-in-out;
+}
+.container #style-box.leftslide:before, .container #style-box.fadein:before, .container #style-box.topslide:before, .container #style-box.pushslide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.container #style-box.pushslide {
+  transform: translate3d(250px, 0, 0);
+  transition: transform 0.3s ease-in-out;
+  z-index: 5;
+}
+.container #style-box .box-inner h1 {
+  margin-top: 0;
+  padding: 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.container #style-box .box-inner h1 span {
+  font-style: italic;
+  font-size: 20px;
+}
+.container #style-box .box-inner ul li {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #3BD9B5;
+  text-transform: capitalize;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff;
+  border: 2px solid #3BD9B5;
+  transition: background-color 0.2s ease-in;
+}
+.container #style-box .box-inner ul li:last-child {
+  margin-right: 0;
+}
+.container #style-box .box-inner ul li:hover, .container #style-box .box-inner ul li.now {
+  background-color: transparent;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 30px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+
+/*-----------------nav bar -------------------*/
+nav{
+    width: 100vw;
+    height: 97px;
+    background-color: black;
+    display: flex;
+    color: white;
+}
+#MENU{
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 29px;
+margin-top: 10px;
+}
+#name{
+    font-family: 'Oregano';
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 65px;
+}
+
+.rigt-nav{
+    width: 45%;
+    height: 97px;
+    /* background-color: #3BD9B5; */
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    margin-right:35px;
+}
+.center-nav{
+    width: 50%;
+    height: 97px;
+    /* background-color: yellow; */
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.left-nav{
+    width: 15%;
+    height: 97px;
+    /* background-color: green; */
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+img.icon{
+    width: 35px;
+    height: 35px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.content >h1{
+width: 800px;
+height: 358px;
+font-family: 'Red Hat Display';
+font-style: normal;
+font-weight: 800;
+font-size: 60px;
+line-height: 79px;
+
+color: #FFFFFF;
+}
+.content{
+    /* background: #6f58ee; */
+    z-index: 18;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.typewrite{
+   
+    text-decoration: none;
+    color: white;
+    font-family: 'Red Hat Display';
+font-style: normal;
+font-weight: 800;
+font-size: 60px;
+line-height: 79px;
+width: 300px;
+}
+#txt{
+    color: #3ED7F9;
+    width:70px;
+    height:15px;
+}
+
+em{
+    width: 300px;
+}
+
+.content{
+    height: 200px;
+    /* background: salmon; */
+    font-family: 'Red Hat Display';
+font-style: normal;
+font-weight: 800;
+font-size: 54px;
+line-height: 79px;
+width: 680px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.title-1{
+    width: 950px;
+}
+/*home page buttons */
+.viewresume-btn{
+background: #3ED7F9;
+border: 1px solid #3ED7F9;
+}
+.viewprojects-btn{
+background: #F98C3E;
+border: 1px solid #F98C3E;
+
+color: white;
+}
+
+.viewprojects-btn,.viewresume-btn{
+width: 289px;
+height: 60px;
+
+box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 100px;
+
+font-family: 'Red Hat Display';
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 26px;
+cursor: pointer;
+}
+
+.btn-box{
+  width: 700px;
+  height: 90px;
+  /* background-color: #ffffff; */
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+}
+.thinkabout{
+width: 254px;
+height: 62px;
+border: 2px solid #FFFFFF;
+box-sizing: border-box;
+border-radius: 50px;
+
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+text-align: center;
+color: #FFFFFF;
+
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 45px;
+}
+.quote{
+width: 890px;
+height: 92px;
+
+font-style: normal;
+font-weight: 900;
+font-size: 35px;
+line-height: 46px;
+
+color: #FFFFFF;
+margin-top: 45px;
+}
+
+.button {
+  transition-duration: 0.4s;
+}
+
+.viewprojects-btn:hover {
+  background: black;
+  color: white;
+  border: none;
+}
+.viewresume-btn:hover{
+  background: black;
+  color: white;
+  border: none;
+}
